@@ -136,7 +136,12 @@ export default function Counter() {
           </Flex>
         </Box>
       ) : (
-        <Flex direction="column" w="100%">
+        <Flex
+          direction="column"
+          w="100%"
+          justifyContent="center"
+          alignItems="center"
+        >
           <Center w="301px" minW="40px" maxW="100%">
             <CircularProgress
               value={(time / targetTime) * 100}
