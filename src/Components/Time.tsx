@@ -14,7 +14,10 @@ export default function Time() {
   const validSeconds = Number(minutes) > -1 ? seconds : "00";
 
   return (
-    <Text fontSize={["4xl", "4xl", "5xl"]} mt={isInitial ? "12px" : "0px"}>
+    <Text
+      fontSize={["5xl", "6xl", "6xl"]}
+      mt={isInitial ? "64px" : ["48px", "48px", "48px"]}
+    >
       {validHours}:{validMinutes}:{validSeconds}
     </Text>
   );

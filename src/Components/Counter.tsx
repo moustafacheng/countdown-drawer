@@ -136,8 +136,8 @@ export default function Counter() {
           </Flex>
         </Box>
       ) : (
-        <Box>
-          <Center>
+        <Flex direction="column" w="100%">
+          <Center w="301px" minW="40px" maxW="100%">
             <CircularProgress
               value={(time / targetTime) * 100}
               color="teal"
@@ -170,7 +170,7 @@ export default function Counter() {
               結束
             </Button>
           </Center>
-        </Box>
+        </Flex>
       )}
       <Time />
     </Block>

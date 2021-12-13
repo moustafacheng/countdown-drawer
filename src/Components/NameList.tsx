@@ -107,7 +107,7 @@ export default function NameList() {
       </form>
       <Flex
         w="100%"
-        maxH={["200px", "300px", "300px"]}
+        maxH={["185px", "250px", "250px"]}
         overflow="scroll"
         mt="16px"
         border={nameList.length > 0 ? "1px solid #E2E8F0" : "none"}
