@@ -86,11 +86,10 @@ export default function Counter() {
 
       {status === "initial" ? (
         <Box>
-          <Center>
+          <Center h="48px">
             <Tabs
               variant="soft-rounded"
               colorScheme="red"
-              mb="12px"
               index={modeIndex}
               onChange={handleModeChange}
             >
@@ -100,7 +99,7 @@ export default function Counter() {
               </TabList>
             </Tabs>
           </Center>
-          <Flex>
+          <Flex height="92px" justify="center" align="center">
             <NumberInput
               mr={["12px", "12px", "16px"]}
               value={
@@ -177,7 +176,9 @@ export default function Counter() {
           </Center>
         </Flex>
       )}
-      <Time />
+      <Center height="100%">
+        <Time />
+      </Center>
     </Block>
   );
 }
